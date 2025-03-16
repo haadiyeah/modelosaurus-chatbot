@@ -4,3 +4,5 @@ postcss.config.js
 tailwind.config.js
 .babelrc
 .gitignore
+package-lock.json
+.github/

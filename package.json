@@ -1,5 +1,5 @@
 {
-    "name": "modelosaurus-chatbot",
+    "name": "modelosaurus-chatbots",
     "version": "1.0.0",
     "description": "A customizable AI chatbot component powered by Modelosaurus",
     "main": "dist/index.js",
@@ -19,17 +19,19 @@
       "ai",
       "component"
     ],
-    "author": "Your Name",
+    "author": "Haadiya Sajid",
     "license": "MIT",
     "peerDependencies": {
-      "react": ">=16.8.0",
-      "react-dom": ">=16.8.0"
+      "react": "^18.0.0",
+  "react-dom": "^18.0.0"
     },
     "dependencies": {
       "framer-motion": "^10.16.4",
       "lucide-react": "^0.279.0"
     },
     "devDependencies": {
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
       "@babel/core": "^7.23.0",
       "@babel/preset-env": "^7.22.20",
       "@babel/preset-react": "^7.22.15",
