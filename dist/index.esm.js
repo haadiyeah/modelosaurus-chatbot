@@ -9974,8 +9974,8 @@ var ModelosaurusChatbot = function ModelosaurusChatbot(_ref) {
       }).then(function (response) {
         return response.json();
       }).then(function (data) {
-        console.log("got the vector store url.");
-        console.log(data.vector_store_url);
+        // console.log("got the vector store url.")
+        // console.log(data.vector_store_url)
         setVectorStoreUrl(data.vector_store_url);
       })["catch"](function (error) {
         console.error('Error:', error);
@@ -9995,11 +9995,23 @@ var ModelosaurusChatbot = function ModelosaurusChatbot(_ref) {
     }
   }, [customCSS]);
   var formatBotResponse = function formatBotResponse(response) {
-    // Add two newline characters after each full stop
-    response = response.replace(/\./g, '.\n\n');
+    if (!response) return '';
 
-    // Remove </s> if it appears (common in LLM outputs)
+    // Replace </s> if it appears (common in LLM outputs)
     response = response.replace(/<\/s>/g, '');
+
+    // Convert markdown-style bold text to HTML
+    response = response.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+
+    // Handle lists - add proper spacing after list items
+    response = response.replace(/(\d+\.\s.+?)(?:\n|$)/g, '$1\n\n');
+    response = response.replace(/(-\s.+?)(?:\n|$)/g, '$1\n\n');
+
+    // Handle paragraphs - ensure proper spacing between paragraphs
+    response = response.replace(/\.(?=\s)/g, '.\n\n');
+
+    // Clean up excessive newlines
+    response = response.replace(/\n{3,}/g, '\n\n');
     return response;
   };
   var handleSubmit = /*#__PURE__*/function () {
@@ -10282,7 +10294,11 @@ var ModelosaurusChatbot = function ModelosaurusChatbot(_ref) {
     }))) : null, /*#__PURE__*/React__default.createElement("div", {
       className: "chat-bubble relative",
       style: chatItem.sender === 'bot' ? styles.chatBubbleBot : styles.chatBubbleUser
-    }, chatItem.sender === "bot" ? formatBotResponse(chatItem.message) : chatItem.message, /*#__PURE__*/React__default.createElement("div", {
+    }, chatItem.sender === "bot" ? /*#__PURE__*/React__default.createElement("div", {
+      dangerouslySetInnerHTML: {
+        __html: formatBotResponse(chatItem.message).replace(/\n/g, '<br/>')
+      }
+    }) : chatItem.message, /*#__PURE__*/React__default.createElement("div", {
       style: {
         backgroundColor: chatItem.sender == 'bot' ? chatBubbleBotColor : chatBubbleUserColor
       },

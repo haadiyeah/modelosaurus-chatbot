@@ -38,7 +38,7 @@ const ModelosaurusChatbot = ({
   initialMessage = 'Hello! How can I assist you today?',
 
   //Npm package prop
-  apiUrl = "https://kodiak-viable-supposedly.ngrok-free.app", //will replace with ngrok later
+  apiUrl = "https://kodiak-viable-supposedly.ngrok-free.app", //server
 
   // LLM props
   llm = 'llama-3.2-b', // Default LLM
@@ -101,8 +101,8 @@ const ModelosaurusChatbot = ({
       })
         .then((response) => response.json())
         .then((data) => {
-          console.log("got the vector store url.")
-          console.log(data.vector_store_url)
+          // console.log("got the vector store url.")
+          // console.log(data.vector_store_url)
           setVectorStoreUrl(data.vector_store_url)
         })
         .catch((error) => {
@@ -125,15 +125,26 @@ const ModelosaurusChatbot = ({
   }, [customCSS]);
 
   const formatBotResponse = (response) => {
-    // Add two newline characters after each full stop
-    response = response.replace(/\./g, '.\n\n');
-
-    // Remove </s> if it appears (common in LLM outputs)
+    if (!response) return '';
+  
+    // Replace </s> if it appears (common in LLM outputs)
     response = response.replace(/<\/s>/g, '');
-
+  
+    // Convert markdown-style bold text to HTML
+    response = response.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    
+    // Handle lists - add proper spacing after list items
+    response = response.replace(/(\d+\.\s.+?)(?:\n|$)/g, '$1\n\n');
+    response = response.replace(/(-\s.+?)(?:\n|$)/g, '$1\n\n');
+    
+    // Handle paragraphs - ensure proper spacing between paragraphs
+    response = response.replace(/\.(?=\s)/g, '.\n\n');
+    
+    // Clean up excessive newlines
+    response = response.replace(/\n{3,}/g, '\n\n');
+    
     return response;
-  }
-
+  };
   const handleSubmit = async (e) => {
     e.preventDefault();
     const currentMessage = message; // Store the current message
@@ -350,7 +361,7 @@ const ModelosaurusChatbot = ({
                       style={chatItem.sender === 'bot' ? styles.chatBubbleBot : styles.chatBubbleUser}
                     >
                       {chatItem.sender === "bot"
-                        ? formatBotResponse(chatItem.message)
+                        ?  <div dangerouslySetInnerHTML={{ __html: formatBotResponse(chatItem.message).replace(/\n/g, '<br/>') }} />
                         : chatItem.message}
 
                       <div style={{ backgroundColor: chatItem.sender == 'bot' ? chatBubbleBotColor : chatBubbleUserColor }}
