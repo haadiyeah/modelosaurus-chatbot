@@ -10353,5 +10353,5 @@ var ModelosaurusChatbot = function ModelosaurusChatbot(_ref) {
   }, " MODELOSAURUS"))))));
 };
 
-export { ModelosaurusChatbot as default };
+export { ModelosaurusChatbot, ModelosaurusChatbot as default };
 //# sourceMappingURL=index.esm.js.map

@@ -1,5 +1,7 @@
 'use strict';
 
+Object.defineProperty(exports, '__esModule', { value: true });
+
 var React = require('react');
 
 function _interopNamespaceDefault(e) {
@@ -10373,5 +10375,6 @@ var ModelosaurusChatbot = function ModelosaurusChatbot(_ref) {
   }, " MODELOSAURUS"))))));
 };
 
-module.exports = ModelosaurusChatbot;
+exports.ModelosaurusChatbot = ModelosaurusChatbot;
+exports.default = ModelosaurusChatbot;
 //# sourceMappingURL=index.js.map
