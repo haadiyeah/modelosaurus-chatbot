@@ -2,6 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
+var jsxRuntime = require('react/jsx-runtime');
 var React = require('react');
 
 function _interopNamespaceDefault(e) {
@@ -53,440 +54,75 @@ function styleInject(css, ref) {
 var css_248z = "*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:\"\"}:host,html{-webkit-text-size-adjust:100%;font-feature-settings:normal;-webkit-tap-highlight-color:transparent;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-variation-settings:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-feature-settings:normal;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em;font-variation-settings:normal}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{font-feature-settings:inherit;color:inherit;font-family:inherit;font-size:100%;font-variation-settings:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]:where(:not([hidden=until-found])){display:none}:root,[data-theme]{background-color:hsl(var(--b1)/var(--tw-bg-opacity,1));color:hsl(var(--bc)/var(--tw-text-opacity,1))}html{-webkit-tap-highlight-color:transparent}:root{--pf:259 94% 44%;--sf:314 100% 40%;--af:174 75% 39%;--nf:214 20% 14%;--in:198 93% 60%;--su:158 64% 52%;--wa:43 96% 56%;--er:0 91% 71%;--inc:198 100% 12%;--suc:158 100% 10%;--wac:43 100% 11%;--erc:0 100% 14%;--rounded-box:1rem;--rounded-btn:0.5rem;--rounded-badge:1.9rem;--animation-btn:0.25s;--animation-input:.2s;--btn-text-case:uppercase;--btn-focus-scale:0.95;--border-btn:1px;--tab-border:1px;--tab-radius:0.5rem;--p:259 94% 51%;--pc:259 96% 91%;--s:314 100% 47%;--sc:314 100% 91%;--a:174 75% 46%;--ac:174 75% 11%;--n:214 20% 21%;--nc:212 19% 87%;--b1:0 0% 100%;--b2:0 0% 95%;--b3:180 2% 90%;--bc:215 28% 17%;color-scheme:light}@media (prefers-color-scheme:dark){:root{--pf:262 80% 43%;--sf:316 70% 43%;--af:175 70% 34%;--in:198 93% 60%;--su:158 64% 52%;--wa:43 96% 56%;--er:0 91% 71%;--inc:198 100% 12%;--suc:158 100% 10%;--wac:43 100% 11%;--erc:0 100% 14%;--rounded-box:1rem;--rounded-btn:0.5rem;--rounded-badge:1.9rem;--animation-btn:0.25s;--animation-input:.2s;--btn-text-case:uppercase;--btn-focus-scale:0.95;--border-btn:1px;--tab-border:1px;--tab-radius:0.5rem;--p:262 80% 50%;--pc:0 0% 100%;--s:316 70% 50%;--sc:0 0% 100%;--a:175 70% 41%;--ac:0 0% 100%;--n:213 18% 20%;--nf:212 17% 17%;--nc:220 13% 69%;--b1:212 18% 14%;--b2:213 18% 12%;--b3:213 18% 10%;--bc:220 13% 69%;color-scheme:dark}}[data-theme=light]{--pf:259 94% 44%;--sf:314 100% 40%;--af:174 75% 39%;--nf:214 20% 14%;--in:198 93% 60%;--su:158 64% 52%;--wa:43 96% 56%;--er:0 91% 71%;--inc:198 100% 12%;--suc:158 100% 10%;--wac:43 100% 11%;--erc:0 100% 14%;--rounded-box:1rem;--rounded-btn:0.5rem;--rounded-badge:1.9rem;--animation-btn:0.25s;--animation-input:.2s;--btn-text-case:uppercase;--btn-focus-scale:0.95;--border-btn:1px;--tab-border:1px;--tab-radius:0.5rem;--p:259 94% 51%;--pc:259 96% 91%;--s:314 100% 47%;--sc:314 100% 91%;--a:174 75% 46%;--ac:174 75% 11%;--n:214 20% 21%;--nc:212 19% 87%;--b1:0 0% 100%;--b2:0 0% 95%;--b3:180 2% 90%;--bc:215 28% 17%;color-scheme:light}[data-theme=dark]{--pf:262 80% 43%;--sf:316 70% 43%;--af:175 70% 34%;--in:198 93% 60%;--su:158 64% 52%;--wa:43 96% 56%;--er:0 91% 71%;--inc:198 100% 12%;--suc:158 100% 10%;--wac:43 100% 11%;--erc:0 100% 14%;--rounded-box:1rem;--rounded-btn:0.5rem;--rounded-badge:1.9rem;--animation-btn:0.25s;--animation-input:.2s;--btn-text-case:uppercase;--btn-focus-scale:0.95;--border-btn:1px;--tab-border:1px;--tab-radius:0.5rem;--p:262 80% 50%;--pc:0 0% 100%;--s:316 70% 50%;--sc:0 0% 100%;--a:175 70% 41%;--ac:0 0% 100%;--n:213 18% 20%;--nf:212 17% 17%;--nc:220 13% 69%;--b1:212 18% 14%;--b2:213 18% 12%;--b3:213 18% 10%;--bc:220 13% 69%;color-scheme:dark}.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.avatar{display:inline-flex;position:relative}.avatar>div{aspect-ratio:1/1;display:block;overflow:hidden}.avatar img{height:100%;-o-object-fit:cover;object-fit:cover;width:100%}.avatar.placeholder>div{display:flex}.avatar.placeholder>div,.btn{align-items:center;justify-content:center}.btn{--tw-border-opacity:1;--tw-bg-opacity:1;--tw-text-opacity:1;animation:button-pop var(--animation-btn,.25s) ease-out;background-color:hsl(var(--b2)/var(--tw-bg-opacity));border-color:transparent;border-color:hsl(var(--b2)/var(--tw-border-opacity));border-radius:var(--rounded-btn,.5rem);border-width:var(--border-btn,1px);color:hsl(var(--bc)/var(--tw-text-opacity));cursor:pointer;display:inline-flex;flex-shrink:0;flex-wrap:wrap;font-size:.875rem;font-weight:600;gap:.5rem;height:3rem;line-height:1em;min-height:3rem;outline-color:hsl(var(--bc)/1);padding-left:1rem;padding-right:1rem;text-align:center;text-decoration-line:none;text-transform:var(--btn-text-case,uppercase);transition-duration:.2s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-timing-function:cubic-bezier(0,0,.2,1);-webkit-user-select:none;-moz-user-select:none;user-select:none}.btn-disabled,.btn:disabled,.btn[disabled]{pointer-events:none}.btn-group>input[type=radio].btn{-webkit-appearance:none;-moz-appearance:none;appearance:none}.btn-group>input[type=radio].btn:before{content:attr(data-title)}.btn:is(input[type=checkbox]),.btn:is(input[type=radio]){-webkit-appearance:none;-moz-appearance:none;appearance:none;width:auto}.btn:is(input[type=checkbox]):after,.btn:is(input[type=radio]):after{--tw-content:attr(aria-label);content:var(--tw-content)}.chat{-moz-column-gap:.75rem;column-gap:.75rem;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));padding-bottom:.25rem;padding-top:.25rem}.chat-image{align-self:flex-end;grid-row:span 2/span 2}.chat-bubble{--tw-bg-opacity:1;--tw-text-opacity:1;background-color:hsl(var(--n)/var(--tw-bg-opacity));border-radius:var(--rounded-box,1rem);color:hsl(var(--nc)/var(--tw-text-opacity));display:block;max-width:90%;min-height:2.75rem;min-width:2.75rem;padding:.5rem 1rem;position:relative;width:-moz-fit-content;width:fit-content}.chat-bubble:before{background-color:inherit;bottom:0;content:\"\";height:.75rem;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain;position:absolute;width:.75rem}.chat-start{grid-template-columns:auto 1fr;place-items:start}.chat-start .chat-footer,.chat-start .chat-header{grid-column-start:2}.chat-start .chat-image{grid-column-start:1}.chat-start .chat-bubble{border-bottom-left-radius:0;grid-column-start:2}.chat-start .chat-bubble:before{left:-.749rem;-webkit-mask-image:url(\"data:image/svg+xml;charset=utf-8,%3Csvg width='3' height='3' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 3h3V0c0 1-2 3-3 3'/%3E%3C/svg%3E\");mask-image:url(\"data:image/svg+xml;charset=utf-8,%3Csvg width='3' height='3' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 3h3V0c0 1-2 3-3 3'/%3E%3C/svg%3E\")}[dir=rtl] .chat-start .chat-bubble:before{-webkit-mask-image:url(\"data:image/svg+xml;charset=utf-8,%3Csvg width='3' height='3' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 3h3C2 3 0 1 0 0'/%3E%3C/svg%3E\");mask-image:url(\"data:image/svg+xml;charset=utf-8,%3Csvg width='3' height='3' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 3h3C2 3 0 1 0 0'/%3E%3C/svg%3E\")}.chat-end{grid-template-columns:1fr auto;place-items:end}.chat-end .chat-footer,.chat-end .chat-header{grid-column-start:1}.chat-end .chat-image{grid-column-start:2}.chat-end .chat-bubble{border-bottom-right-radius:0;grid-column-start:1}.chat-end .chat-bubble:before{left:99.9%;-webkit-mask-image:url(\"data:image/svg+xml;charset=utf-8,%3Csvg width='3' height='3' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 3h3C2 3 0 1 0 0'/%3E%3C/svg%3E\");mask-image:url(\"data:image/svg+xml;charset=utf-8,%3Csvg width='3' height='3' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 3h3C2 3 0 1 0 0'/%3E%3C/svg%3E\")}[dir=rtl] .chat-end .chat-bubble:before{-webkit-mask-image:url(\"data:image/svg+xml;charset=utf-8,%3Csvg width='3' height='3' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 3h3V0c0 1-2 3-3 3'/%3E%3C/svg%3E\");mask-image:url(\"data:image/svg+xml;charset=utf-8,%3Csvg width='3' height='3' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 3h3V0c0 1-2 3-3 3'/%3E%3C/svg%3E\")}@media (hover:hover){.btn:hover{--tw-border-opacity:1;--tw-bg-opacity:1;background-color:hsl(var(--b3)/var(--tw-bg-opacity));border-color:hsl(var(--b3)/var(--tw-border-opacity))}.btn.glass:hover{--glass-opacity:25%;--glass-border-opacity:15%}.btn-disabled:hover,.btn:disabled:hover,.btn[disabled]:hover{--tw-border-opacity:0;--tw-bg-opacity:0.2;--tw-text-opacity:0.2;background-color:hsl(var(--n)/var(--tw-bg-opacity));color:hsl(var(--bc)/var(--tw-text-opacity))}.btn:is(input[type=checkbox]:checked):hover,.btn:is(input[type=radio]:checked):hover{--tw-border-opacity:1;--tw-bg-opacity:1;background-color:hsl(var(--pf)/var(--tw-bg-opacity));border-color:hsl(var(--pf)/var(--tw-border-opacity))}}.input{--tw-border-opacity:0;--tw-bg-opacity:1;background-color:hsl(var(--b1)/var(--tw-bg-opacity));border-color:hsl(var(--bc)/var(--tw-border-opacity));border-radius:var(--rounded-btn,.5rem);border-width:1px;flex-shrink:1;font-size:1rem;height:3rem;line-height:2;line-height:1.5rem;padding-left:1rem;padding-right:1rem}.input-group>.input{isolation:isolate}.input-group>*,.input-group>.input,.input-group>.select,.input-group>.textarea{border-radius:0}.avatar-group :where(.avatar){--tw-border-opacity:1;border-color:hsl(var(--b1)/var(--tw-border-opacity));border-radius:9999px;border-width:4px;overflow:hidden}.btn:active:focus,.btn:active:hover{animation:button-pop 0s ease-out;transform:scale(var(--btn-focus-scale,.97))}.btn:focus-visible{outline-offset:2px;outline-style:solid;outline-width:2px}.btn.glass{--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);outline-color:currentColor}.btn.glass.btn-active{--glass-opacity:25%;--glass-border-opacity:15%}.btn.btn-disabled,.btn:disabled,.btn[disabled]{--tw-border-opacity:0;--tw-bg-opacity:0.2;--tw-text-opacity:0.2;background-color:hsl(var(--n)/var(--tw-bg-opacity));color:hsl(var(--bc)/var(--tw-text-opacity))}.btn-group>.btn-active,.btn-group>input[type=radio]:checked.btn{--tw-border-opacity:1;--tw-bg-opacity:1;--tw-text-opacity:1;background-color:hsl(var(--p)/var(--tw-bg-opacity));border-color:hsl(var(--p)/var(--tw-border-opacity));color:hsl(var(--pc)/var(--tw-text-opacity))}.btn-group>.btn-active:focus-visible,.btn-group>input[type=radio]:checked.btn:focus-visible{outline-color:hsl(var(--p)/1);outline-style:solid;outline-width:2px}.btn:is(input[type=checkbox]:checked),.btn:is(input[type=radio]:checked){--tw-border-opacity:1;--tw-bg-opacity:1;--tw-text-opacity:1;background-color:hsl(var(--p)/var(--tw-bg-opacity));border-color:hsl(var(--p)/var(--tw-border-opacity));color:hsl(var(--pc)/var(--tw-text-opacity))}.btn:is(input[type=checkbox]:checked):focus-visible,.btn:is(input[type=radio]:checked):focus-visible{outline-color:hsl(var(--p)/1)}@keyframes button-pop{0%{transform:scale(var(--btn-focus-scale,.98))}40%{transform:scale(1.02)}to{transform:scale(1)}}@keyframes checkmark{0%{background-position-y:5px}50%{background-position-y:-2px}to{background-position-y:0}}.input input:focus{outline:2px solid transparent;outline-offset:2px}.input[list]::-webkit-calendar-picker-indicator{line-height:1em}.input-bordered{--tw-border-opacity:0.2}.input:focus,.input:focus-within{outline-color:hsl(var(--bc)/.2);outline-offset:2px;outline-style:solid;outline-width:2px}.input-disabled,.input:disabled,.input[disabled]{--tw-border-opacity:1;--tw-bg-opacity:1;--tw-text-opacity:0.2;background-color:hsl(var(--b2)/var(--tw-bg-opacity));border-color:hsl(var(--b2)/var(--tw-border-opacity));cursor:not-allowed}.input-disabled::-moz-placeholder,.input:disabled::-moz-placeholder,.input[disabled]::-moz-placeholder{--tw-placeholder-opacity:0.2;color:hsl(var(--bc)/var(--tw-placeholder-opacity))}.input-disabled::placeholder,.input:disabled::placeholder,.input[disabled]::placeholder{--tw-placeholder-opacity:0.2;color:hsl(var(--bc)/var(--tw-placeholder-opacity))}.loading{aspect-ratio:1/1;background-color:currentColor;display:inline-block;-webkit-mask-image:url(\"data:image/svg+xml;charset=utf-8,%3Csvg width='24' height='24' stroke='%23000' xmlns='http://www.w3.org/2000/svg'%3E%3Cstyle%3E@keyframes spinner_zKoa{to{transform:rotate(360deg)}}@keyframes spinner_YpZS{0%25{stroke-dasharray:0 150;stroke-dashoffset:0}47.5%25{stroke-dasharray:42 150;stroke-dashoffset:-16}95%25,to{stroke-dasharray:42 150;stroke-dashoffset:-59}}%3C/style%3E%3Cg style='transform-origin:center;animation:spinner_zKoa 2s linear infinite'%3E%3Ccircle cx='12' cy='12' r='9.5' fill='none' stroke-width='3' style='stroke-linecap:round;animation:spinner_YpZS 1.5s ease-out infinite'/%3E%3C/g%3E%3C/svg%3E\");mask-image:url(\"data:image/svg+xml;charset=utf-8,%3Csvg width='24' height='24' stroke='%23000' xmlns='http://www.w3.org/2000/svg'%3E%3Cstyle%3E@keyframes spinner_zKoa{to{transform:rotate(360deg)}}@keyframes spinner_YpZS{0%25{stroke-dasharray:0 150;stroke-dashoffset:0}47.5%25{stroke-dasharray:42 150;stroke-dashoffset:-16}95%25,to{stroke-dasharray:42 150;stroke-dashoffset:-59}}%3C/style%3E%3Cg style='transform-origin:center;animation:spinner_zKoa 2s linear infinite'%3E%3Ccircle cx='12' cy='12' r='9.5' fill='none' stroke-width='3' style='stroke-linecap:round;animation:spinner_YpZS 1.5s ease-out infinite'/%3E%3C/g%3E%3C/svg%3E\");-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:100%;mask-size:100%;pointer-events:none;width:1.5rem}.loading-dots{-webkit-mask-image:url(\"data:image/svg+xml;charset=utf-8,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cstyle%3E@keyframes spinner_8HQG{0%25,57.14%25{animation-timing-function:cubic-bezier(.33,.66,.66,1);transform:translate(0)}28.57%25{animation-timing-function:cubic-bezier(.33,0,.66,.33);transform:translateY(-6px)}to{transform:translate(0)}}.spinner_qM83{animation:spinner_8HQG 1.05s infinite}%3C/style%3E%3Ccircle class='spinner_qM83' cx='4' cy='12' r='3'/%3E%3Ccircle class='spinner_qM83' cx='12' cy='12' r='3' style='animation-delay:.1s'/%3E%3Ccircle class='spinner_qM83' cx='20' cy='12' r='3' style='animation-delay:.2s'/%3E%3C/svg%3E\");mask-image:url(\"data:image/svg+xml;charset=utf-8,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cstyle%3E@keyframes spinner_8HQG{0%25,57.14%25{animation-timing-function:cubic-bezier(.33,.66,.66,1);transform:translate(0)}28.57%25{animation-timing-function:cubic-bezier(.33,0,.66,.33);transform:translateY(-6px)}to{transform:translate(0)}}.spinner_qM83{animation:spinner_8HQG 1.05s infinite}%3C/style%3E%3Ccircle class='spinner_qM83' cx='4' cy='12' r='3'/%3E%3Ccircle class='spinner_qM83' cx='12' cy='12' r='3' style='animation-delay:.1s'/%3E%3Ccircle class='spinner_qM83' cx='20' cy='12' r='3' style='animation-delay:.2s'/%3E%3C/svg%3E\")}.loading-md{width:1.5rem}.mockup-browser .mockup-browser-toolbar .input{--tw-bg-opacity:1;background-color:hsl(var(--b2)/var(--tw-bg-opacity));display:block;height:1.75rem;margin-left:auto;margin-right:auto;overflow:hidden;padding-left:2rem;position:relative;text-overflow:ellipsis;white-space:nowrap;width:24rem}.mockup-browser .mockup-browser-toolbar .input:before{--tw-translate-y:-50%;aspect-ratio:1/1;border-color:currentColor;border-radius:9999px;border-width:2px;height:.75rem;left:.5rem}.mockup-browser .mockup-browser-toolbar .input:after,.mockup-browser .mockup-browser-toolbar .input:before{content:\"\";opacity:.6;position:absolute;top:50%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.mockup-browser .mockup-browser-toolbar .input:after{--tw-translate-y:25%;--tw-rotate:-45deg;border-color:currentColor;border-radius:9999px;border-width:1px;height:.5rem;left:1.25rem}@keyframes modal-pop{0%{opacity:0}}@keyframes progress-loading{50%{background-position-x:-115%}}@keyframes radiomark{0%{box-shadow:0 0 0 12px hsl(var(--b1)) inset,0 0 0 12px hsl(var(--b1)) inset}50%{box-shadow:0 0 0 3px hsl(var(--b1)) inset,0 0 0 3px hsl(var(--b1)) inset}to{box-shadow:0 0 0 4px hsl(var(--b1)) inset,0 0 0 4px hsl(var(--b1)) inset}}@keyframes rating-pop{0%{transform:translateY(-.125em)}40%{transform:translateY(-.125em)}to{transform:translateY(0)}}@keyframes toast-pop{0%{opacity:0;transform:scale(.9)}to{opacity:1;transform:scale(1)}}.btn-md{font-size:.875rem;height:3rem;min-height:3rem;padding-left:1rem;padding-right:1rem}.btn-square:where(.btn-md){height:3rem;padding:0;width:3rem}.btn-circle:where(.btn-md){border-radius:9999px;height:3rem;padding:0;width:3rem}.avatar.online:before{background-color:hsl(var(--su)/var(--tw-bg-opacity))}.avatar.offline:before,.avatar.online:before{--tw-bg-opacity:1;border-radius:9999px;content:\"\";display:block;height:15%;outline-color:hsl(var(--b1)/1);outline-style:solid;outline-width:2px;position:absolute;right:7%;top:7%;width:15%;z-index:10}.avatar.offline:before{background-color:hsl(var(--b3)/var(--tw-bg-opacity))}.btn-group .btn:not(:first-child):not(:last-child){border-bottom-left-radius:0;border-bottom-right-radius:0;border-top-left-radius:0;border-top-right-radius:0}.btn-group .btn:first-child:not(:last-child){border-bottom-left-radius:var(--rounded-btn,.5rem);border-bottom-right-radius:0;border-top-left-radius:var(--rounded-btn,.5rem);border-top-right-radius:0;margin-left:-1px;margin-top:0}.btn-group .btn:last-child:not(:first-child){border-bottom-left-radius:0;border-bottom-right-radius:var(--rounded-btn,.5rem);border-top-left-radius:0;border-top-right-radius:var(--rounded-btn,.5rem)}.btn-group-horizontal .btn:not(:first-child):not(:last-child){border-bottom-left-radius:0;border-bottom-right-radius:0;border-top-left-radius:0;border-top-right-radius:0}.btn-group-horizontal .btn:first-child:not(:last-child){border-bottom-left-radius:var(--rounded-btn,.5rem);border-bottom-right-radius:0;border-top-left-radius:var(--rounded-btn,.5rem);border-top-right-radius:0;margin-left:-1px;margin-top:0}.btn-group-horizontal .btn:last-child:not(:first-child){border-bottom-left-radius:0;border-bottom-right-radius:var(--rounded-btn,.5rem);border-top-left-radius:0;border-top-right-radius:var(--rounded-btn,.5rem)}.btn-group-vertical .btn:first-child:not(:last-child){border-bottom-left-radius:0;border-bottom-right-radius:0;border-top-left-radius:var(--rounded-btn,.5rem);border-top-right-radius:var(--rounded-btn,.5rem);margin-left:0;margin-top:-1px}.btn-group-vertical .btn:last-child:not(:first-child){border-bottom-left-radius:var(--rounded-btn,.5rem);border-bottom-right-radius:var(--rounded-btn,.5rem);border-top-left-radius:0;border-top-right-radius:0}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0}.-bottom-1{bottom:-.25rem}.-left-3{left:-.75rem}.-right-3{right:-.75rem}.bottom-0{bottom:0}.right-0{right:0}.z-40{z-index:40}.z-50{z-index:50}.-mt-4{margin-top:-1rem}.mb-3{margin-bottom:.75rem}.mt-5{margin-top:1.25rem}.flex{display:flex}.hidden{display:none}.size-3{height:.75rem;width:.75rem}.size-4{height:1rem;width:1rem}.size-6{height:1.5rem;width:1.5rem}.h-0{height:0}.h-2{height:.5rem}.h-6{height:1.5rem}.h-\\[38rem\\]{height:38rem}.w-10{width:2.5rem}.w-6{width:1.5rem}.w-full{width:100%}.flex-1{flex:1 1 0%}.cursor-pointer{cursor:pointer}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.rounded-full{border-radius:9999px}.rounded-b-lg{border-bottom-left-radius:.5rem;border-bottom-right-radius:.5rem}.rounded-b-xl{border-bottom-left-radius:.75rem;border-bottom-right-radius:.75rem}.rounded-t-lg{border-top-left-radius:.5rem;border-top-right-radius:.5rem}.rounded-t-none{border-top-left-radius:0;border-top-right-radius:0}.bg-base-200{--tw-bg-opacity:1;background-color:hsl(var(--b2)/var(--tw-bg-opacity,1))}.bg-base-300{--tw-bg-opacity:1;background-color:hsl(var(--b3)/var(--tw-bg-opacity,1))}.bg-red-900{--tw-bg-opacity:1;background-color:rgb(127 29 29/var(--tw-bg-opacity,1))}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.from-primary{--tw-gradient-from:hsl(var(--p)/1) var(--tw-gradient-from-position);--tw-gradient-to:hsl(var(--p)/0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.via-secondary{--tw-gradient-to:hsl(var(--s)/0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),hsl(var(--s)/1) var(--tw-gradient-via-position),var(--tw-gradient-to)}.to-primary{--tw-gradient-to:hsl(var(--p)/1) var(--tw-gradient-to-position)}.bg-\\[length\\:200\\%_100\\%\\]{background-size:200% 100%}.p-2{padding:.5rem}.p-6{padding:1.5rem}.text-center{text-align:center}.text-xs{font-size:.75rem;line-height:1rem}.text-purple-600{--tw-text-opacity:1;color:rgb(147 51 234/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.opacity-40{opacity:.4}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.drop-shadow-2xl{--tw-drop-shadow:drop-shadow(0 25px 25px rgba(0,0,0,.15))}.drop-shadow-2xl,.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-opacity{transition-duration:.15s;transition-property:opacity;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-300{transition-duration:.3s}.ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}@keyframes gradient{0%{background-position:0 50%}50%{background-position:100% 50%}to{background-position:0 50%}}.animate-gradient{animation:gradient 3s ease infinite}.hover\\:opacity-90:hover{opacity:.9}@media (min-width:768px){.md\\:bottom-4{bottom:1rem}.md\\:right-7{right:1.75rem}.md\\:w-\\[30rem\\]{width:30rem}}";
 styleInject(css_248z,{"insertAt":"top"});
 
-function _arrayLikeToArray(r, a) {
-  (null == a || a > r.length) && (a = r.length);
-  for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e];
-  return n;
-}
-function _arrayWithHoles(r) {
-  if (Array.isArray(r)) return r;
-}
-function _arrayWithoutHoles(r) {
-  if (Array.isArray(r)) return _arrayLikeToArray(r);
-}
-function asyncGeneratorStep(n, t, e, r, o, a, c) {
-  try {
-    var i = n[a](c),
-      u = i.value;
-  } catch (n) {
-    return void e(n);
-  }
-  i.done ? t(u) : Promise.resolve(u).then(r, o);
-}
-function _asyncToGenerator(n) {
-  return function () {
-    var t = this,
-      e = arguments;
-    return new Promise(function (r, o) {
-      var a = n.apply(t, e);
-      function _next(n) {
-        asyncGeneratorStep(a, r, o, _next, _throw, "next", n);
-      }
-      function _throw(n) {
-        asyncGeneratorStep(a, r, o, _next, _throw, "throw", n);
-      }
-      _next(void 0);
+/******************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+/* global Reflect, Promise, SuppressedError, Symbol, Iterator */
+
+
+function __awaiter(thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
-  };
 }
-function _createForOfIteratorHelper(r, e) {
-  var t = "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
-  if (!t) {
-    if (Array.isArray(r) || (t = _unsupportedIterableToArray(r)) || e && r && "number" == typeof r.length) {
-      t && (r = t);
-      var n = 0,
-        F = function () {};
-      return {
-        s: F,
-        n: function () {
-          return n >= r.length ? {
-            done: !0
-          } : {
-            done: !1,
-            value: r[n++]
-          };
-        },
-        e: function (r) {
-          throw r;
-        },
-        f: F
-      };
+
+function __generator(thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g = Object.create((typeof Iterator === "function" ? Iterator : Object).prototype);
+    return g.next = verb(0), g["throw"] = verb(1), g["return"] = verb(2), typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (g && (g = 0, op[0] && (_ = 0)), _) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
-    throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-  }
-  var o,
-    a = !0,
-    u = !1;
-  return {
-    s: function () {
-      t = t.call(r);
-    },
-    n: function () {
-      var r = t.next();
-      return a = r.done, r;
-    },
-    e: function (r) {
-      u = !0, o = r;
-    },
-    f: function () {
-      try {
-        a || null == t.return || t.return();
-      } finally {
-        if (u) throw o;
-      }
-    }
-  };
 }
-function _iterableToArray(r) {
-  if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r);
-}
-function _iterableToArrayLimit(r, l) {
-  var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
-  if (null != t) {
-    var e,
-      n,
-      i,
-      u,
-      a = [],
-      f = !0,
-      o = !1;
-    try {
-      if (i = (t = t.call(r)).next, 0 === l) {
-        if (Object(t) !== t) return;
-        f = !1;
-      } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0);
-    } catch (r) {
-      o = !0, n = r;
-    } finally {
-      try {
-        if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return;
-      } finally {
-        if (o) throw n;
-      }
-    }
-    return a;
-  }
-}
-function _nonIterableRest() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-function _nonIterableSpread() {
-  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-function _regeneratorRuntime() {
-  _regeneratorRuntime = function () {
-    return e;
-  };
-  var t,
-    e = {},
-    r = Object.prototype,
-    n = r.hasOwnProperty,
-    o = Object.defineProperty || function (t, e, r) {
-      t[e] = r.value;
-    },
-    i = "function" == typeof Symbol ? Symbol : {},
-    a = i.iterator || "@@iterator",
-    c = i.asyncIterator || "@@asyncIterator",
-    u = i.toStringTag || "@@toStringTag";
-  function define(t, e, r) {
-    return Object.defineProperty(t, e, {
-      value: r,
-      enumerable: !0,
-      configurable: !0,
-      writable: !0
-    }), t[e];
-  }
-  try {
-    define({}, "");
-  } catch (t) {
-    define = function (t, e, r) {
-      return t[e] = r;
-    };
-  }
-  function wrap(t, e, r, n) {
-    var i = e && e.prototype instanceof Generator ? e : Generator,
-      a = Object.create(i.prototype),
-      c = new Context(n || []);
-    return o(a, "_invoke", {
-      value: makeInvokeMethod(t, r, c)
-    }), a;
-  }
-  function tryCatch(t, e, r) {
-    try {
-      return {
-        type: "normal",
-        arg: t.call(e, r)
-      };
-    } catch (t) {
-      return {
-        type: "throw",
-        arg: t
-      };
-    }
-  }
-  e.wrap = wrap;
-  var h = "suspendedStart",
-    l = "suspendedYield",
-    f = "executing",
-    s = "completed",
-    y = {};
-  function Generator() {}
-  function GeneratorFunction() {}
-  function GeneratorFunctionPrototype() {}
-  var p = {};
-  define(p, a, function () {
-    return this;
-  });
-  var d = Object.getPrototypeOf,
-    v = d && d(d(values([])));
-  v && v !== r && n.call(v, a) && (p = v);
-  var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p);
-  function defineIteratorMethods(t) {
-    ["next", "throw", "return"].forEach(function (e) {
-      define(t, e, function (t) {
-        return this._invoke(e, t);
-      });
-    });
-  }
-  function AsyncIterator(t, e) {
-    function invoke(r, o, i, a) {
-      var c = tryCatch(t[r], t, o);
-      if ("throw" !== c.type) {
-        var u = c.arg,
-          h = u.value;
-        return h && "object" == typeof h && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) {
-          invoke("next", t, i, a);
-        }, function (t) {
-          invoke("throw", t, i, a);
-        }) : e.resolve(h).then(function (t) {
-          u.value = t, i(u);
-        }, function (t) {
-          return invoke("throw", t, i, a);
-        });
-      }
-      a(c.arg);
-    }
-    var r;
-    o(this, "_invoke", {
-      value: function (t, n) {
-        function callInvokeWithMethodAndArg() {
-          return new e(function (e, r) {
-            invoke(t, n, e, r);
-          });
+
+function __spreadArray(to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
         }
-        return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg();
-      }
-    });
-  }
-  function makeInvokeMethod(e, r, n) {
-    var o = h;
-    return function (i, a) {
-      if (o === f) throw Error("Generator is already running");
-      if (o === s) {
-        if ("throw" === i) throw a;
-        return {
-          value: t,
-          done: !0
-        };
-      }
-      for (n.method = i, n.arg = a;;) {
-        var c = n.delegate;
-        if (c) {
-          var u = maybeInvokeDelegate(c, n);
-          if (u) {
-            if (u === y) continue;
-            return u;
-          }
-        }
-        if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) {
-          if (o === h) throw o = s, n.arg;
-          n.dispatchException(n.arg);
-        } else "return" === n.method && n.abrupt("return", n.arg);
-        o = f;
-        var p = tryCatch(e, r, n);
-        if ("normal" === p.type) {
-          if (o = n.done ? s : l, p.arg === y) continue;
-          return {
-            value: p.arg,
-            done: n.done
-          };
-        }
-        "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg);
-      }
-    };
-  }
-  function maybeInvokeDelegate(e, r) {
-    var n = r.method,
-      o = e.iterator[n];
-    if (o === t) return r.delegate = null, "throw" === n && e.iterator.return && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y;
-    var i = tryCatch(o, e.iterator, r.arg);
-    if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y;
-    var a = i.arg;
-    return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y);
-  }
-  function pushTryEntry(t) {
-    var e = {
-      tryLoc: t[0]
-    };
-    1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e);
-  }
-  function resetTryEntry(t) {
-    var e = t.completion || {};
-    e.type = "normal", delete e.arg, t.completion = e;
-  }
-  function Context(t) {
-    this.tryEntries = [{
-      tryLoc: "root"
-    }], t.forEach(pushTryEntry, this), this.reset(!0);
-  }
-  function values(e) {
-    if (e || "" === e) {
-      var r = e[a];
-      if (r) return r.call(e);
-      if ("function" == typeof e.next) return e;
-      if (!isNaN(e.length)) {
-        var o = -1,
-          i = function next() {
-            for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next;
-            return next.value = t, next.done = !0, next;
-          };
-        return i.next = i;
-      }
     }
-    throw new TypeError(typeof e + " is not iterable");
-  }
-  return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", {
-    value: GeneratorFunctionPrototype,
-    configurable: !0
-  }), o(GeneratorFunctionPrototype, "constructor", {
-    value: GeneratorFunction,
-    configurable: !0
-  }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) {
-    var e = "function" == typeof t && t.constructor;
-    return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name));
-  }, e.mark = function (t) {
-    return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t;
-  }, e.awrap = function (t) {
-    return {
-      __await: t
-    };
-  }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () {
-    return this;
-  }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) {
-    void 0 === i && (i = Promise);
-    var a = new AsyncIterator(wrap(t, r, n, o), i);
-    return e.isGeneratorFunction(r) ? a : a.next().then(function (t) {
-      return t.done ? t.value : a.next();
-    });
-  }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () {
-    return this;
-  }), define(g, "toString", function () {
-    return "[object Generator]";
-  }), e.keys = function (t) {
-    var e = Object(t),
-      r = [];
-    for (var n in e) r.push(n);
-    return r.reverse(), function next() {
-      for (; r.length;) {
-        var t = r.pop();
-        if (t in e) return next.value = t, next.done = !1, next;
-      }
-      return next.done = !0, next;
-    };
-  }, e.values = values, Context.prototype = {
-    constructor: Context,
-    reset: function (e) {
-      if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t);
-    },
-    stop: function () {
-      this.done = !0;
-      var t = this.tryEntries[0].completion;
-      if ("throw" === t.type) throw t.arg;
-      return this.rval;
-    },
-    dispatchException: function (e) {
-      if (this.done) throw e;
-      var r = this;
-      function handle(n, o) {
-        return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o;
-      }
-      for (var o = this.tryEntries.length - 1; o >= 0; --o) {
-        var i = this.tryEntries[o],
-          a = i.completion;
-        if ("root" === i.tryLoc) return handle("end");
-        if (i.tryLoc <= this.prev) {
-          var c = n.call(i, "catchLoc"),
-            u = n.call(i, "finallyLoc");
-          if (c && u) {
-            if (this.prev < i.catchLoc) return handle(i.catchLoc, !0);
-            if (this.prev < i.finallyLoc) return handle(i.finallyLoc);
-          } else if (c) {
-            if (this.prev < i.catchLoc) return handle(i.catchLoc, !0);
-          } else {
-            if (!u) throw Error("try statement without catch or finally");
-            if (this.prev < i.finallyLoc) return handle(i.finallyLoc);
-          }
-        }
-      }
-    },
-    abrupt: function (t, e) {
-      for (var r = this.tryEntries.length - 1; r >= 0; --r) {
-        var o = this.tryEntries[r];
-        if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) {
-          var i = o;
-          break;
-        }
-      }
-      i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null);
-      var a = i ? i.completion : {};
-      return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a);
-    },
-    complete: function (t, e) {
-      if ("throw" === t.type) throw t.arg;
-      return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y;
-    },
-    finish: function (t) {
-      for (var e = this.tryEntries.length - 1; e >= 0; --e) {
-        var r = this.tryEntries[e];
-        if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y;
-      }
-    },
-    catch: function (t) {
-      for (var e = this.tryEntries.length - 1; e >= 0; --e) {
-        var r = this.tryEntries[e];
-        if (r.tryLoc === t) {
-          var n = r.completion;
-          if ("throw" === n.type) {
-            var o = n.arg;
-            resetTryEntry(r);
-          }
-          return o;
-        }
-      }
-      throw Error("illegal catch attempt");
-    },
-    delegateYield: function (e, r, n) {
-      return this.delegate = {
-        iterator: values(e),
-        resultName: r,
-        nextLoc: n
-      }, "next" === this.method && (this.arg = t), y;
-    }
-  }, e;
+    return to.concat(ar || Array.prototype.slice.call(from));
 }
-function _slicedToArray(r, e) {
-  return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest();
-}
-function _toConsumableArray(r) {
-  return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread();
-}
-function _unsupportedIterableToArray(r, a) {
-  if (r) {
-    if ("string" == typeof r) return _arrayLikeToArray(r, a);
-    var t = {}.toString.call(r).slice(8, -1);
-    return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0;
-  }
-}
+
+typeof SuppressedError === "function" ? SuppressedError : function (error, suppressed, message) {
+    var e = new Error(message);
+    return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
+};
 
 /**
  * lucide-react v0.279.0 - ISC
@@ -9880,97 +9516,119 @@ var img = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAH9CAYAAABsnMSgAAA
 var getContrastColor = function getContrastColor(hexColor) {
   // Remove # if present
   var hex = hexColor.replace('#', '');
-
   // Convert hex to RGB
   var r = parseInt(hex.substr(0, 2), 16);
   var g = parseInt(hex.substr(2, 2), 16);
   var b = parseInt(hex.substr(4, 2), 16);
-
   // Calculate perceived brightness (YIQ formula)
   var brightness = r * 0.299 + g * 0.587 + b * 0.114;
-
   // Return white for dark colors and black for light colors
   return brightness < 150 ? '#ffffff' : '#000000';
 };
-var ModelosaurusChatbot = function ModelosaurusChatbot(_ref) {
-  var _ref$headerColor = _ref.headerColor,
-    headerColor = _ref$headerColor === void 0 ? '#6419E6' : _ref$headerColor,
-    _ref$chatBubbleUserCo = _ref.chatBubbleUserColor,
-    chatBubbleUserColor = _ref$chatBubbleUserCo === void 0 ? '#F000B8' : _ref$chatBubbleUserCo,
-    _ref$chatBubbleBotCol = _ref.chatBubbleBotColor,
-    chatBubbleBotColor = _ref$chatBubbleBotCol === void 0 ? '#6419E6' : _ref$chatBubbleBotCol,
-    _ref$fontSize = _ref.fontSize,
-    fontSize = _ref$fontSize === void 0 ? 16 : _ref$fontSize,
-    _ref$borderRadius = _ref.borderRadius,
-    borderRadius = _ref$borderRadius === void 0 ? 10 : _ref$borderRadius,
-    _ref$fontFamily = _ref.fontFamily,
-    fontFamily = _ref$fontFamily === void 0 ? 'sans-serif' : _ref$fontFamily,
-    _ref$showBotIcon = _ref.showBotIcon,
-    showBotIcon = _ref$showBotIcon === void 0 ? true : _ref$showBotIcon,
-    _ref$showUserIcon = _ref.showUserIcon,
-    showUserIcon = _ref$showUserIcon === void 0 ? true : _ref$showUserIcon,
-    _ref$botIconUrl = _ref.botIconUrl,
-    botIconUrl = _ref$botIconUrl === void 0 ? "" : _ref$botIconUrl,
-    _ref$userIconUrl = _ref.userIconUrl,
-    userIconUrl = _ref$userIconUrl === void 0 ? "" : _ref$userIconUrl,
-    _ref$titleText = _ref.titleText,
-    titleText = _ref$titleText === void 0 ? 'Chat with AI' : _ref$titleText,
-    _ref$initialMessage = _ref.initialMessage,
-    initialMessage = _ref$initialMessage === void 0 ? 'Hello! How can I assist you today?' : _ref$initialMessage,
-    _ref$apiUrl = _ref.apiUrl,
-    apiUrl = _ref$apiUrl === void 0 ? "https://kodiak-viable-supposedly.ngrok-free.app" : _ref$apiUrl,
-    _ref$llm = _ref.llm,
-    llm = _ref$llm === void 0 ? 'llama-3.2-b' : _ref$llm,
-    _ref$temperature = _ref.temperature,
-    temperature = _ref$temperature === void 0 ? 30 : _ref$temperature,
-    _ref$maxTokens = _ref.maxTokens,
-    maxTokens = _ref$maxTokens === void 0 ? 500 : _ref$maxTokens,
-    _ref$modelosaurusKey = _ref.modelosaurusKey,
-    modelosaurusKey = _ref$modelosaurusKey === void 0 ? '' : _ref$modelosaurusKey,
-    _ref$chatbotId = _ref.chatbotId,
-    chatbotId = _ref$chatbotId === void 0 ? '' : _ref$chatbotId,
-    _ref$onMessageSent = _ref.onMessageSent,
-    onMessageSent = _ref$onMessageSent === void 0 ? function () {} : _ref$onMessageSent,
-    _ref$onMessageReceive = _ref.onMessageReceived,
-    onMessageReceived = _ref$onMessageReceive === void 0 ? function () {} : _ref$onMessageReceive,
-    _ref$customCSS = _ref.customCSS,
-    customCSS = _ref$customCSS === void 0 ? '' : _ref$customCSS,
-    _ref$enableVectorSear = _ref.enableVectorSearch,
-    enableVectorSearch = _ref$enableVectorSear === void 0 ? true : _ref$enableVectorSear,
-    _ref$enableStreaming = _ref.enableStreaming,
-    enableStreaming = _ref$enableStreaming === void 0 ? true : _ref$enableStreaming,
-    _ref$demoMode = _ref.demoMode,
-    demoMode = _ref$demoMode === void 0 ? false : _ref$demoMode;
-  var _useState = React.useState(''),
-    _useState2 = _slicedToArray(_useState, 2),
-    message = _useState2[0],
-    setMessage = _useState2[1];
-  var _useState3 = React.useState(false),
-    _useState4 = _slicedToArray(_useState3, 2),
-    loading = _useState4[0],
-    setLoading = _useState4[1];
-  var _useState5 = React.useState([{
+var ModelosaurusChatbot = function ModelosaurusChatbot(_a) {
+  var
+    // Appearance props
+    _b = _a.headerColor,
+    // Appearance props
+    headerColor = _b === void 0 ? '#6419E6' : _b,
+    // Default primary color
+    _c = _a.chatBubbleUserColor,
+    // Default primary color
+    chatBubbleUserColor = _c === void 0 ? '#F000B8' : _c,
+    // Default accent color
+    _d = _a.chatBubbleBotColor,
+    // Default accent color
+    chatBubbleBotColor = _d === void 0 ? '#6419E6' : _d,
+    // Default primary color
+    _e = _a.fontSize,
+    // Default primary color
+    fontSize = _e === void 0 ? 16 : _e,
+    _f = _a.borderRadius,
+    borderRadius = _f === void 0 ? 10 : _f,
+    _g = _a.fontFamily,
+    fontFamily = _g === void 0 ? 'sans-serif' : _g,
+    _h = _a.showBotIcon,
+    showBotIcon = _h === void 0 ? true : _h,
+    _j = _a.showUserIcon,
+    showUserIcon = _j === void 0 ? true : _j,
+    _k = _a.botIconUrl,
+    botIconUrl = _k === void 0 ? "" : _k,
+    // Default robot icon
+    _l = _a.userIconUrl,
+    // Default robot icon
+    userIconUrl = _l === void 0 ? "" : _l,
+    // Default user icon
+    _m = _a.titleText,
+    // Default user icon
+    titleText = _m === void 0 ? 'Chat with AI' : _m,
+    _o = _a.initialMessage,
+    initialMessage = _o === void 0 ? 'Hello! How can I assist you today?' : _o,
+    //Npm package prop
+    _p = _a.apiUrl,
+    //Npm package prop
+    apiUrl = _p === void 0 ? "https://kodiak-viable-supposedly.ngrok-free.app" : _p,
+    //server
+    // LLM props
+    _q = _a.llm,
+    //server
+    // LLM props
+    llm = _q === void 0 ? 'llama-3.2-b' : _q,
+    // Default LLM
+    _r = _a.temperature,
+    // Default LLM
+    temperature = _r === void 0 ? 30 : _r,
+    // Default temperature (0.3)
+    _s = _a.maxTokens,
+    // Default temperature (0.3)
+    maxTokens = _s === void 0 ? 500 : _s,
+    // Default max tokens
+    _t = _a.modelosaurusKey,
+    // Default max tokens
+    modelosaurusKey = _t === void 0 ? '' : _t,
+    // Required for API access
+    _u = _a.chatbotId,
+    // Required for API access
+    chatbotId = _u === void 0 ? '' : _u,
+    // Custom hooks
+    _v = _a.onMessageSent,
+    // Custom hooks
+    onMessageSent = _v === void 0 ? function () {} : _v,
+    _w = _a.onMessageReceived,
+    onMessageReceived = _w === void 0 ? function () {} : _w,
+    // Advanced options
+    _x = _a.customCSS,
+    // Advanced options
+    customCSS = _x === void 0 ? '' : _x,
+    _y = _a.enableVectorSearch,
+    enableVectorSearch = _y === void 0 ? true : _y,
+    _z = _a.enableStreaming,
+    enableStreaming = _z === void 0 ? true : _z,
+    _0 = _a.demoMode,
+    demoMode = _0 === void 0 ? false : _0;
+  var _1 = React.useState(''),
+    message = _1[0],
+    setMessage = _1[1];
+  var _2 = React.useState(false),
+    loading = _2[0],
+    setLoading = _2[1];
+  var _3 = React.useState([{
       sender: 'bot',
       message: initialMessage
     }]),
-    _useState6 = _slicedToArray(_useState5, 2),
-    chat = _useState6[0],
-    setChat = _useState6[1];
-  var _useState7 = React.useState(false),
-    _useState8 = _slicedToArray(_useState7, 2),
-    isExpanded = _useState8[0],
-    setIsExpanded = _useState8[1];
+    chat = _3[0],
+    setChat = _3[1];
+  var _4 = React.useState(false),
+    isExpanded = _4[0],
+    setIsExpanded = _4[1];
   var chatEndRef = React.useRef(null);
-  var _useState9 = React.useState(null),
-    _useState10 = _slicedToArray(_useState9, 2),
-    vectorStoreUrl = _useState10[0],
-    setVectorStoreUrl = _useState10[1];
-
+  var _5 = React.useState(null),
+    vectorStoreUrl = _5[0],
+    setVectorStoreUrl = _5[1];
   // Convert temperature value (0-100) to actual temperature (0-1)
   var actualTemperature = temperature / 100;
   var scrollToBottom = function scrollToBottom() {
-    var _chatEndRef$current;
-    (_chatEndRef$current = chatEndRef.current) === null || _chatEndRef$current === void 0 || _chatEndRef$current.scrollIntoView({
+    var _a;
+    (_a = chatEndRef.current) === null || _a === void 0 ? void 0 : _a.scrollIntoView({
       behavior: 'smooth'
     });
   };
@@ -9996,71 +9654,62 @@ var ModelosaurusChatbot = function ModelosaurusChatbot(_ref) {
       }).then(function (response) {
         return response.json();
       }).then(function (data) {
-        // console.log("got the vector store url.")
-        // console.log(data.vector_store_url)
         setVectorStoreUrl(data.vector_store_url);
       })["catch"](function (error) {
         console.error('Error:', error);
       });
     }
   }, [enableVectorSearch]);
-
   // Apply custom CSS if provided
   React.useEffect(function () {
     if (customCSS) {
-      var styleElement = document.createElement('style');
-      styleElement.innerHTML = customCSS;
-      document.head.appendChild(styleElement);
+      var styleElement_1 = document.createElement('style');
+      styleElement_1.innerHTML = customCSS;
+      document.head.appendChild(styleElement_1);
       return function () {
-        document.head.removeChild(styleElement);
+        document.head.removeChild(styleElement_1);
       };
     }
   }, [customCSS]);
   var formatBotResponse = function formatBotResponse(response) {
     if (!response) return '';
-
     // Replace </s> if it appears (common in LLM outputs)
     response = response.replace(/<\/s>/g, '');
-
     // Convert markdown-style bold text to HTML
     response = response.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-
     // Handle lists - add proper spacing after list items
     response = response.replace(/(\d+\.\s.+?)(?:\n|$)/g, '$1\n\n');
     response = response.replace(/(-\s.+?)(?:\n|$)/g, '$1\n\n');
-
     // Handle paragraphs - ensure proper spacing between paragraphs
     response = response.replace(/\.(?=\s)/g, '.\n\n');
-
     // Clean up excessive newlines
     response = response.replace(/\n{3,}/g, '\n\n');
     return response;
   };
-  var handleSubmit = /*#__PURE__*/function () {
-    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(e) {
-      var currentMessage, res, reader, decoder, result, _yield$reader$read, done, value, chunk, lines, _iterator, _step, line, data, parsed, _data, botResponse;
-      return _regeneratorRuntime().wrap(function _callee$(_context) {
-        while (1) switch (_context.prev = _context.next) {
+  var handleSubmit = function handleSubmit(e) {
+    return __awaiter(void 0, void 0, void 0, function () {
+      var currentMessage, res, reader, decoder, result_1, _a, done, value, chunk, lines, _i, lines_1, line, data, parsed, data, botResponse_1, err_1;
+      var _b;
+      return __generator(this, function (_c) {
+        switch (_c.label) {
           case 0:
             e.preventDefault();
-            currentMessage = message; // Store the current message
+            currentMessage = message;
             setLoading(true);
-
             // Add the user's message to the chat immediately
             setChat(function (prevChat) {
-              return [].concat(_toConsumableArray(prevChat), [{
+              return __spreadArray(__spreadArray([], prevChat, true), [{
                 sender: 'user',
                 message: currentMessage
-              }]);
+              }], false);
             });
-
             // Call the onMessageSent hook
             onMessageSent(currentMessage);
             setMessage(''); // Clear the message input
-            _context.prev = 6;
-            _context.next = 9;
-            return fetch("".concat(apiUrl, "/chatbot/chat"), {
-              //const res= await fetch(`http://localhost:8000/chat`, {
+            _c.label = 1;
+          case 1:
+            _c.trys.push([1, 9,, 10]);
+            return [4 /*yield*/, fetch("".concat(apiUrl, "/chatbot/chat"), {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
@@ -10081,144 +9730,96 @@ var ModelosaurusChatbot = function ModelosaurusChatbot(_ref) {
                 // Enable vector search for RAG
                 vector_store_url: vectorStoreUrl
               })
-            });
-          case 9:
-            res = _context.sent;
-            if (res.ok) {
-              _context.next = 12;
-              break;
+            })];
+          case 2:
+            res = _c.sent();
+            if (!res.ok) {
+              throw new Error("HTTP error! status: ".concat(res.status));
             }
-            throw new Error("HTTP error! status: ".concat(res.status));
-          case 12:
-            if (!enableStreaming) {
-              _context.next = 51;
-              break;
-            }
-            reader = res.body.getReader();
+            if (!enableStreaming) return [3 /*break*/, 6];
+            reader = (_b = res.body) === null || _b === void 0 ? void 0 : _b.getReader();
+            if (!reader) throw new Error('Response body reader not available');
             decoder = new TextDecoder();
-            result = ''; // Add an initial empty bot message
+            result_1 = '';
+            // Add an initial empty bot message
             setChat(function (prevChat) {
-              return [].concat(_toConsumableArray(prevChat), [{
+              return __spreadArray(__spreadArray([], prevChat, true), [{
                 sender: 'bot',
                 message: ''
-              }]);
+              }], false);
             });
-          case 17:
-            _context.next = 20;
-            return reader.read();
-          case 20:
-            _yield$reader$read = _context.sent;
-            done = _yield$reader$read.done;
-            value = _yield$reader$read.value;
-            if (!done) {
-              _context.next = 25;
-              break;
-            }
-            return _context.abrupt("break", 49);
-          case 25:
+            _c.label = 3;
+          case 3:
+            return [4 /*yield*/, reader.read()];
+          case 4:
+            _a = _c.sent(), done = _a.done, value = _a.value;
+            if (done) return [3 /*break*/, 5];
             chunk = decoder.decode(value, {
               stream: true
-            }); // Parse SSE data
+            });
             lines = chunk.split('\n').filter(function (line) {
               return line.trim() !== '';
             });
-            _iterator = _createForOfIteratorHelper(lines);
-            _context.prev = 28;
-            _iterator.s();
-          case 30:
-            if ((_step = _iterator.n()).done) {
-              _context.next = 39;
-              break;
-            }
-            line = _step.value;
-            if (!line.startsWith('data: ')) {
-              _context.next = 37;
-              break;
-            }
-            data = line.slice(6);
-            if (!(data === '[DONE]')) {
-              _context.next = 36;
-              break;
-            }
-            return _context.abrupt("continue", 37);
-          case 36:
-            try {
-              parsed = JSON.parse(data);
-              if (parsed.choices && parsed.choices[0].delta.content) {
-                result += parsed.choices[0].delta.content;
-
-                // Update chat with current result
-                setChat(function (prevChat) {
-                  return [].concat(_toConsumableArray(prevChat.slice(0, -1)), [{
-                    sender: 'bot',
-                    message: result
-                  }]);
-                });
+            for (_i = 0, lines_1 = lines; _i < lines_1.length; _i++) {
+              line = lines_1[_i];
+              if (line.startsWith('data: ')) {
+                data = line.slice(6);
+                if (data === '[DONE]') continue;
+                try {
+                  parsed = JSON.parse(data);
+                  if (parsed.choices && parsed.choices[0].delta.content) {
+                    result_1 += parsed.choices[0].delta.content;
+                    // Update chat with current result
+                    setChat(function (prevChat) {
+                      return __spreadArray(__spreadArray([], prevChat.slice(0, -1), true), [{
+                        sender: 'bot',
+                        message: result_1
+                      }], false);
+                    });
+                  }
+                } catch (e) {
+                  console.error('Error parsing SSE data:', e);
+                }
               }
-            } catch (e) {
-              console.error('Error parsing SSE data:', e);
             }
-          case 37:
-            _context.next = 30;
-            break;
-          case 39:
-            _context.next = 44;
-            break;
-          case 41:
-            _context.prev = 41;
-            _context.t0 = _context["catch"](28);
-            _iterator.e(_context.t0);
-          case 44:
-            _context.prev = 44;
-            _iterator.f();
-            return _context.finish(44);
-          case 47:
-            _context.next = 17;
-            break;
-          case 49:
-            _context.next = 57;
-            break;
-          case 51:
-            _context.next = 53;
-            return res.json();
-          case 53:
-            _data = _context.sent;
-            botResponse = _data.choices[0].message.content;
+            return [3 /*break*/, 3];
+          case 5:
+            return [3 /*break*/, 8];
+          case 6:
+            return [4 /*yield*/, res.json()];
+          case 7:
+            data = _c.sent();
+            botResponse_1 = data.choices[0].message.content;
             setChat(function (prevChat) {
-              return [].concat(_toConsumableArray(prevChat), [{
+              return __spreadArray(__spreadArray([], prevChat, true), [{
                 sender: 'bot',
-                message: botResponse
-              }]);
+                message: botResponse_1
+              }], false);
             });
-
             // Call the onMessageReceived hook
-            onMessageReceived(botResponse);
-          case 57:
+            onMessageReceived(botResponse_1);
+            _c.label = 8;
+          case 8:
             setLoading(false);
-            _context.next = 65;
-            break;
-          case 60:
-            _context.prev = 60;
-            _context.t1 = _context["catch"](6);
-            console.error('Fetch error:', _context.t1);
+            return [3 /*break*/, 10];
+          case 9:
+            err_1 = _c.sent();
+            console.error('Fetch error:', err_1);
             setLoading(false);
             // Add an error message to the chat
             setChat(function (prevChat) {
-              return [].concat(_toConsumableArray(prevChat), [{
+              return __spreadArray(__spreadArray([], prevChat, true), [{
                 sender: 'bot',
                 message: demoMode ? "This is a sample response from your chatbot. " : 'Sorry, an error occurred. Please try again.'
-              }]);
+              }], false);
             });
-          case 65:
-          case "end":
-            return _context.stop();
+            return [3 /*break*/, 10];
+          case 10:
+            return [2 /*return*/];
         }
-      }, _callee, null, [[6, 60], [28, 41, 44, 47]]);
-    }));
-    return function handleSubmit(_x) {
-      return _ref2.apply(this, arguments);
-    };
-  }();
+      });
+    });
+  };
   var handleSendMessage = function handleSendMessage() {
     if (message.trim() !== '') {
       handleSubmit({
@@ -10234,7 +9835,6 @@ var ModelosaurusChatbot = function ModelosaurusChatbot(_ref) {
   var toggleChat = function toggleChat() {
     if (!demoMode) setIsExpanded(!isExpanded);
   };
-
   // Dynamic styles based on props
   var styles = {
     header: {
@@ -10256,123 +9856,151 @@ var ModelosaurusChatbot = function ModelosaurusChatbot(_ref) {
       fontFamily: fontFamily
     }
   };
-  return /*#__PURE__*/React.createElement(React.Fragment, null, !demoMode && /*#__PURE__*/React.createElement(AnimatePresence, null, isExpanded && /*#__PURE__*/React.createElement(motion.div, {
-    className: "fixed inset-0 z-40 pointer-events-none",
-    style: {
-      background: 'linear-gradient(to left, rgba(0,0,0,0.5), transparent)'
-    },
-    initial: {
-      opacity: 0
-    },
-    animate: {
-      opacity: 1
-    },
-    exit: {
-      opacity: 0
-    },
-    transition: {
-      duration: 0.3
-    }
-  })), /*#__PURE__*/React.createElement("div", {
-    className: "".concat(!demoMode && "fixed bottom-0 right-0 md:bottom-4 md:right-7", " z-50 w-full md:w-[30rem] drop-shadow-2xl"),
-    style: styles.font
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "bg-base-200 rounded-t-lg shadow-lg overflow-hidden"
-  }, /*#__PURE__*/React.createElement("button", {
-    onClick: toggleChat,
-    className: "p-2 flex items-center justify-between cursor-pointer w-full",
-    style: styles.header
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "flex-1 text-center",
-    style: {
-      color: getContrastColor(headerColor)
-    }
-  }, titleText), isExpanded ? /*#__PURE__*/React.createElement(ChevronDown, {
-    className: "w-6 h-6 text-white"
-  }) : /*#__PURE__*/React.createElement(ChevronUp, {
-    className: "w-6 h-6 text-white"
-  })), /*#__PURE__*/React.createElement("div", {
-    className: "bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_100%] animate-gradient h-2",
-    style: {
-      backgroundImage: "linear-gradient(to right, ".concat(headerColor, ", ").concat(chatBubbleUserColor, ", ").concat(headerColor, ")")
-    }
-  })), /*#__PURE__*/React.createElement("div", {
-    className: "transition-all duration-300 ease-in-out overflow-hidden bg-base-200 rounded-b-lg shadow-lg flex flex-col ".concat(isExpanded ? 'h-[38rem]' : 'h-0')
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex-1 flex flex-col overflow-hidden p-6"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex-1 overflow-y-auto"
-  }, chat.map(function (chatItem, index) {
-    return chatItem.message && chatItem.message.trim() === '' ? null : /*#__PURE__*/React.createElement("div", {
-      key: index,
-      className: "chat mb-3 ".concat(chatItem.sender === 'bot' ? 'chat-start' : 'chat-end')
-    }, chatItem.sender === 'bot' && showBotIcon || chatItem.sender === 'user' && showUserIcon ? /*#__PURE__*/React.createElement("div", {
-      className: "chat-image avatar"
-    }, /*#__PURE__*/React.createElement("div", {
-      className: "w-10 rounded-full"
-    }, /*#__PURE__*/React.createElement("img", {
-      alt: chatItem.sender,
-      src: chatItem.sender === 'bot' ? botIconUrl.trim() != "" ? botIconUrl : img$1 : userIconUrl.trim() != "" ? userIconUrl : img
-    }))) : null, /*#__PURE__*/React.createElement("div", {
-      className: "chat-bubble relative",
-      style: chatItem.sender === 'bot' ? styles.chatBubbleBot : styles.chatBubbleUser
-    }, chatItem.sender === "bot" ? /*#__PURE__*/React.createElement("div", {
-      dangerouslySetInnerHTML: {
-        __html: formatBotResponse(chatItem.message).replace(/\n/g, '<br/>')
-      }
-    }) : chatItem.message, /*#__PURE__*/React.createElement("div", {
-      style: {
-        backgroundColor: chatItem.sender == 'bot' ? chatBubbleBotColor : chatBubbleUserColor
-      },
-      className: "".concat(borderRadius <= 10 && "hidden", " absolute size-4 rounded-full -bottom-1 ").concat(chatItem.sender == "bot" ? "-left-3" : "-right-3", " bg-red-900 ")
-    })));
-  }), loading && /*#__PURE__*/React.createElement("div", {
-    className: "chat chat-start"
-  }, showBotIcon && /*#__PURE__*/React.createElement("div", {
-    className: "chat-image avatar"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "w-10 rounded-full"
-  }, /*#__PURE__*/React.createElement("img", {
-    alt: "bot",
-    src: botIconUrl
-  }))), /*#__PURE__*/React.createElement("div", {
-    className: "chat-bubble",
-    style: styles.chatBubbleBot
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "loading loading-dots loading-md"
-  }))), /*#__PURE__*/React.createElement("div", {
-    ref: chatEndRef
-  })), /*#__PURE__*/React.createElement("div", {
-    className: "flex items-center gap-1 mt-5"
-  }, /*#__PURE__*/React.createElement("input", {
-    type: "text",
-    className: "input input-bordered w-full",
-    placeholder: "Type a message",
-    value: message,
-    onChange: function onChange(e) {
-      return setMessage(e.target.value);
-    },
-    onKeyPress: handleKeyPress
-  }), /*#__PURE__*/React.createElement("button", {
-    className: "btn btn-md",
-    style: styles.header,
-    onClick: handleSendMessage
-  }, /*#__PURE__*/React.createElement(SendHorizontal, {
-    className: "size-6 text-white"
-  }))))), /*#__PURE__*/React.createElement("div", {
-    className: "bg-base-300 rounded-b-xl rounded-t-none -mt-4 text-center p-2 text-xs text-white"
-  }, /*#__PURE__*/React.createElement("a", {
-    href: "https://modelosaurus.com",
-    target: "_blank",
-    rel: "noreferrer",
-    className: "opacity-40 hover:opacity-90 transition-opacity duration-300 font-octosquare flex items-center justify-center gap-1"
-  }, /*#__PURE__*/React.createElement("img", {
-    src: img$2,
-    alt: "Modelosaurus",
-    className: "size-3"
-  }), /*#__PURE__*/React.createElement("span", null, "POWERED BY", /*#__PURE__*/React.createElement("span", {
-    className: "text-purple-600"
-  }, " MODELOSAURUS"))))));
+  return jsxRuntime.jsxs(jsxRuntime.Fragment, {
+    children: [!demoMode && jsxRuntime.jsx(AnimatePresence, {
+      children: isExpanded && jsxRuntime.jsx(motion.div
+      // @ts-ignore - motion.div has correct props but TypeScript doesn't recognize them properly
+      , {
+        // @ts-ignore - motion.div has correct props but TypeScript doesn't recognize them properly
+        className: "fixed inset-0 z-40 pointer-events-none",
+        style: {
+          background: 'linear-gradient(to left, rgba(0,0,0,0.5), transparent)'
+        },
+        initial: {
+          opacity: 0
+        },
+        animate: {
+          opacity: 1
+        },
+        exit: {
+          opacity: 0
+        },
+        transition: {
+          duration: 0.3
+        }
+      })
+    }), jsxRuntime.jsxs("div", {
+      className: "".concat(!demoMode && "fixed bottom-0 right-0 md:bottom-4 md:right-7", " z-50 w-full md:w-[30rem] drop-shadow-2xl"),
+      style: styles.font,
+      children: [jsxRuntime.jsxs("div", {
+        className: "bg-base-200 rounded-t-lg shadow-lg overflow-hidden",
+        children: [jsxRuntime.jsxs("button", {
+          onClick: toggleChat,
+          className: "p-2 flex items-center justify-between cursor-pointer w-full",
+          style: styles.header,
+          children: [jsxRuntime.jsx("span", {
+            className: "flex-1 text-center",
+            style: {
+              color: getContrastColor(headerColor)
+            },
+            children: titleText
+          }), isExpanded ? jsxRuntime.jsx(ChevronDown, {
+            className: "w-6 h-6 text-white"
+          }) : jsxRuntime.jsx(ChevronUp, {
+            className: "w-6 h-6 text-white"
+          })]
+        }), jsxRuntime.jsx("div", {
+          className: "bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_100%] animate-gradient h-2",
+          style: {
+            backgroundImage: "linear-gradient(to right, ".concat(headerColor, ", ").concat(chatBubbleUserColor, ", ").concat(headerColor, ")")
+          }
+        })]
+      }), jsxRuntime.jsx("div", {
+        className: "transition-all duration-300 ease-in-out overflow-hidden bg-base-200 rounded-b-lg shadow-lg flex flex-col ".concat(isExpanded ? 'h-[38rem]' : 'h-0'),
+        children: jsxRuntime.jsxs("div", {
+          className: "flex-1 flex flex-col overflow-hidden p-6",
+          children: [jsxRuntime.jsxs("div", {
+            className: "flex-1 overflow-y-auto",
+            children: [chat.map(function (chatItem, index) {
+              return chatItem.message && chatItem.message.trim() === '' ? null : jsxRuntime.jsxs("div", {
+                className: "chat mb-3 ".concat(chatItem.sender === 'bot' ? 'chat-start' : 'chat-end'),
+                children: [chatItem.sender === 'bot' && showBotIcon || chatItem.sender === 'user' && showUserIcon ? jsxRuntime.jsx("div", {
+                  className: "chat-image avatar",
+                  children: jsxRuntime.jsx("div", {
+                    className: "w-10 rounded-full",
+                    children: jsxRuntime.jsx("img", {
+                      alt: chatItem.sender,
+                      src: chatItem.sender === 'bot' ? botIconUrl.trim() !== "" ? botIconUrl : img$1 : userIconUrl.trim() !== "" ? userIconUrl : img
+                    })
+                  })
+                }) : null, jsxRuntime.jsxs("div", {
+                  className: "chat-bubble relative",
+                  style: chatItem.sender === 'bot' ? styles.chatBubbleBot : styles.chatBubbleUser,
+                  children: [chatItem.sender === "bot" ? jsxRuntime.jsx("div", {
+                    dangerouslySetInnerHTML: {
+                      __html: formatBotResponse(chatItem.message).replace(/\n/g, '<br/>')
+                    }
+                  }) : chatItem.message, jsxRuntime.jsx("div", {
+                    style: {
+                      backgroundColor: chatItem.sender === 'bot' ? chatBubbleBotColor : chatBubbleUserColor
+                    },
+                    className: "".concat(borderRadius <= 10 && "hidden", " absolute size-4 rounded-full -bottom-1 ").concat(chatItem.sender === "bot" ? "-left-3" : "-right-3", " bg-red-900 ")
+                  })]
+                })]
+              }, index);
+            }), loading && jsxRuntime.jsxs("div", {
+              className: "chat chat-start",
+              children: [showBotIcon && jsxRuntime.jsx("div", {
+                className: "chat-image avatar",
+                children: jsxRuntime.jsx("div", {
+                  className: "w-10 rounded-full",
+                  children: jsxRuntime.jsx("img", {
+                    alt: "bot",
+                    src: botIconUrl.trim() !== "" ? botIconUrl : img$1
+                  })
+                })
+              }), jsxRuntime.jsx("div", {
+                className: "chat-bubble",
+                style: styles.chatBubbleBot,
+                children: jsxRuntime.jsx("span", {
+                  className: "loading loading-dots loading-md"
+                })
+              })]
+            }), jsxRuntime.jsx("div", {
+              ref: chatEndRef
+            })]
+          }), jsxRuntime.jsxs("div", {
+            className: "flex items-center gap-1 mt-5",
+            children: [jsxRuntime.jsx("input", {
+              type: "text",
+              className: "input input-bordered w-full",
+              placeholder: "Type a message",
+              value: message,
+              onChange: function onChange(e) {
+                return setMessage(e.target.value);
+              },
+              onKeyPress: handleKeyPress
+            }), jsxRuntime.jsx("button", {
+              className: "btn btn-md",
+              style: styles.header,
+              onClick: handleSendMessage,
+              children: jsxRuntime.jsx(SendHorizontal, {
+                className: "size-6 text-white"
+              })
+            })]
+          })]
+        })
+      }), jsxRuntime.jsx("div", {
+        className: "bg-base-300 rounded-b-xl rounded-t-none -mt-4 text-center p-2 text-xs text-white",
+        children: jsxRuntime.jsxs("a", {
+          href: "https://modelosaurus.com",
+          target: "_blank",
+          rel: "noreferrer",
+          className: "opacity-40 hover:opacity-90 transition-opacity duration-300 font-octosquare flex items-center justify-center gap-1",
+          children: [jsxRuntime.jsx("img", {
+            src: img$2,
+            alt: "Modelosaurus",
+            className: "size-3"
+          }), jsxRuntime.jsxs("span", {
+            children: ["POWERED BY", jsxRuntime.jsx("span", {
+              className: "text-purple-600",
+              children: " MODELOSAURUS"
+            })]
+          })]
+        })
+      })]
+    })]
+  });
 };
 
 exports.ModelosaurusChatbot = ModelosaurusChatbot;

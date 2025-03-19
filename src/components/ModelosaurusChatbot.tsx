@@ -39,7 +39,6 @@ onMessageReceived?: (message: string) => void;
 customCSS?: string;
 enableVectorSearch?: boolean;
 enableStreaming?: boolean;
-demoMode?: boolean;
 }
 
 // Define chat message interface
@@ -97,7 +96,6 @@ onMessageReceived = () => { },
 customCSS = '',
 enableVectorSearch = true,
 enableStreaming = true,
-demoMode = false,
 }) => {
 const [message, setMessage] = useState<string>('');
 const [loading, setLoading] = useState<boolean>(false);
@@ -117,13 +115,6 @@ const actualTemperature = temperature / 100;
 const scrollToBottom = (): void => {
     chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
 };
-
-useEffect(() => {
-    if (demoMode) {
-    setIsExpanded(true);
-    }
-}, [demoMode]);
-
 
 useEffect(() => {
     scrollToBottom();
@@ -279,7 +270,7 @@ const handleSubmit = async (e: React.FormEvent | { preventDefault: () => void })
     console.error('Fetch error:', err);
     setLoading(false);
     // Add an error message to the chat
-    setChat(prevChat => [...prevChat, { sender: 'bot', message: demoMode ? "This is a sample response from your chatbot. " : 'Sorry, an error occurred. Please try again.' }]);
+    setChat(prevChat => [...prevChat, { sender: 'bot', message: 'Sorry, an error occurred. Please try again.' }]);
     }
 };
 
@@ -296,7 +287,6 @@ const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>): void => {
 };
 
 const toggleChat = (): void => {
-    if (!demoMode)
     setIsExpanded(!isExpanded);
 };
 
@@ -325,7 +315,7 @@ const styles = {
 return (
     <>
     {/* Gradient Overlay */}
-    {!demoMode && <AnimatePresence>
+    <AnimatePresence>
         {isExpanded && (
             <motion.div
             // @ts-ignore - motion.div has correct props but TypeScript doesn't recognize them properly
@@ -339,10 +329,10 @@ return (
             transition={{ duration: 0.3 }}
         ></motion.div>
         )}
-    </AnimatePresence>}
+    </AnimatePresence>
 
     <div
-        className={`${!demoMode && "fixed bottom-0 right-0 md:bottom-4 md:right-7"} z-50 w-full md:w-[30rem] drop-shadow-2xl`}
+        className="fixed bottom-0 right-0 md:bottom-4 md:right-7 z-50 w-full md:w-[30rem] drop-shadow-2xl"
         style={styles.font}
     >
         {/* Header with gradient line */}
