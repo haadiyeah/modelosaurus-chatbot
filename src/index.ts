@@ -4,5 +4,5 @@ import ModelosaurusChatbot from './components/ModelosaurusChatbot';
 // support named exports
 export { ModelosaurusChatbot };
 
-//  default export
+// default export
 export default ModelosaurusChatbot;

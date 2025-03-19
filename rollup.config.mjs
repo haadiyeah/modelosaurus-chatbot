@@ -4,9 +4,10 @@ import commonjs from '@rollup/plugin-commonjs';
 import postcss from 'rollup-plugin-postcss';
 import image from '@rollup/plugin-image';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
+import typescript from '@rollup/plugin-typescript';
 
 export default {
-  input: 'src/index.js',
+  input: 'src/index.ts',
   output: [
     {
       file: 'dist/index.js',
@@ -24,13 +25,20 @@ export default {
   plugins: [
     peerDepsExternal(),
     resolve({
-      extensions: ['.js', '.jsx']
+      extensions: ['.ts', '.tsx', '.js', '.jsx']
     }),
     commonjs(),
+    typescript({
+      tsconfig: './tsconfig.json',
+      declaration: true,
+      declarationDir: 'dist',
+      include: ['src/**/*.{ts,tsx}']
+    }),
     babel({
       exclude: 'node_modules/**',
       presets: ['@babel/preset-env', '@babel/preset-react'],
-      babelHelpers: 'bundled'
+      babelHelpers: 'bundled',
+      extensions: ['.ts', '.tsx', '.js', '.jsx'],
     }),
     postcss({
       config: {
