@@ -1,6 +1,6 @@
 {
   "name": "modelosaurus-chatbots",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A customizable plug and play chatbot component for React applications, designed to work seamlessly with the Modelosaurus API.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
