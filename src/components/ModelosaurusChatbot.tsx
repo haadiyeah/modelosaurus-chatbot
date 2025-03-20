@@ -30,6 +30,10 @@ interface ChatbotData {
     enableStreaming?: boolean;
     onMessageSent?: string;
     onMessageReceived?: string;
+    backgroundColor?: string;
+    chatWidth?: number;
+    fullWidth?: boolean;
+    demoMode?: boolean;
 }
 
 // Reduce props to only essential ones
@@ -60,6 +64,26 @@ const getContrastColor = (hexColor: string): string => {
     return brightness < 150 ? '#ffffff' : '#000000';
 };
 
+
+const darkenColor = (hexColor: string, percentage: number = 20): string => {
+    // Remove # if present
+    const hex = hexColor.replace('#', '');
+
+    // Convert hex to RGB
+    let r = parseInt(hex.substr(0, 2), 16);
+    let g = parseInt(hex.substr(2, 2), 16);
+    let b = parseInt(hex.substr(4, 2), 16);
+
+    // Darken each component
+    r = Math.max(0, Math.floor(r * (100 - percentage) / 100));
+    g = Math.max(0, Math.floor(g * (100 - percentage) / 100));
+    b = Math.max(0, Math.floor(b * (100 - percentage) / 100));
+
+    // Convert back to hex
+    return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
+};
+
+
 const ModelosaurusChatbot: React.FC<ModelosaurusChatbotProps> = ({
     modelosaurusKey,
     chatbotId,
@@ -84,6 +108,12 @@ const ModelosaurusChatbot: React.FC<ModelosaurusChatbotProps> = ({
         customCSS: '',
         enableVectorSearch: true,
         enableStreaming: true,
+
+        backgroundColor: '#1d232a', // Default background color
+        chatWidth: 400, // Change to numeric default for the slider
+        fullWidth: false, // Default to fixed width
+        demoMode: true, // Demo mode toggle
+
     });
 
     const [message, setMessage] = useState<string>('');
@@ -108,6 +138,12 @@ const ModelosaurusChatbot: React.FC<ModelosaurusChatbotProps> = ({
     useEffect(() => {
         scrollToBottom();
     }, [chat]);
+
+    useEffect(() => {
+        if (settings.demoMode) {
+            setIsExpanded(true)
+        }
+    }, [settings.demoMode]);
 
     // Initialize chat with initial message
     useEffect(() => {
@@ -324,8 +360,9 @@ const ModelosaurusChatbot: React.FC<ModelosaurusChatbotProps> = ({
         }
     };
 
-    const toggleChat = (): void => {
-        setIsExpanded(!isExpanded);
+    const toggleChat = () => {
+        if (!settings.demoMode)
+            setIsExpanded(!isExpanded);
     };
 
     // Dynamic styles based on settings
@@ -344,16 +381,27 @@ const ModelosaurusChatbot: React.FC<ModelosaurusChatbotProps> = ({
             borderRadius: `${settings.borderRadius}px`,
             color: getContrastColor(settings.chatBubbleBotColor || '#6419E6'),
         },
+        background: {
+            backgroundColor: settings.backgroundColor || '#1d232a',
+        },
         font: {
             fontSize: `${settings.fontSize}px`,
             fontFamily: settings.fontFamily,
         }
     };
 
+    const calculateWidth = () => {
+        if (settings.demoMode || settings.fullWidth) {
+            return '100%';
+        }
+        // Ensure chatWidth is treated as a pixel value
+        return `${settings.chatWidth}px`;
+    };
+
     return (
         <>
             {/* Gradient Overlay */}
-            <AnimatePresence>
+            {!settings.demoMode && <AnimatePresence>
                 {isExpanded && (
                     <motion.div
                         // @ts-ignore - motion.div has correct props but TypeScript doesn't recognize them properly
@@ -367,14 +415,17 @@ const ModelosaurusChatbot: React.FC<ModelosaurusChatbotProps> = ({
                         transition={{ duration: 0.3 }}
                     ></motion.div>
                 )}
-            </AnimatePresence>
+            </AnimatePresence>}
 
             <div
-                className="fixed bottom-0 right-0 md:bottom-4 md:right-7 z-50 w-full md:w-[30rem] drop-shadow-2xl"
-                style={styles.font}
+                className={`${!settings.demoMode && "fixed bottom-0 right-0 md:bottom-4 md:right-7"} z-50 ${settings.fullWidth ? 'w-full' : ''} drop-shadow-2xl`}
+                style={{
+                    ...styles.font,
+                    width: settings.fullWidth ? '100%' : calculateWidth()
+                }}
             >
                 {/* Header with gradient line */}
-                <div className="bg-base-200 rounded-t-lg shadow-lg overflow-hidden">
+                <div className=" rounded-t-lg shadow-lg overflow-hidden" style={styles.background}>
                     <button
                         onClick={toggleChat}
                         className="p-2 flex items-center justify-between cursor-pointer w-full"
@@ -400,7 +451,8 @@ const ModelosaurusChatbot: React.FC<ModelosaurusChatbotProps> = ({
 
                 {/* Collapsible chat container */}
                 <div
-                    className={`transition-all duration-300 ease-in-out overflow-hidden bg-base-200 rounded-b-lg shadow-lg flex flex-col ${isExpanded ? 'h-[38rem]' : 'h-0'}`}
+                    className={`transition-all duration-300 ease-in-out overflow-hidden rounded-b-lg shadow-lg flex flex-col ${isExpanded ? 'h-[38rem]' : 'h-0'}`}
+                    style={styles.background}
                 >
                     {/* Chat container */}
                     <div className="flex-1 flex flex-col overflow-hidden p-6">
@@ -452,7 +504,7 @@ const ModelosaurusChatbot: React.FC<ModelosaurusChatbotProps> = ({
                                         className="chat-bubble"
                                         style={styles.chatBubbleBot}
                                     >
-                                        <span className="loading loading-dots loading-md"></span>
+                                        <span className="loading loading-dots"></span>
                                     </div>
                                 </div>
                             )}
@@ -481,7 +533,10 @@ const ModelosaurusChatbot: React.FC<ModelosaurusChatbotProps> = ({
                 </div>
 
                 {/* Powered by Modelosaurus */}
-                <div className="bg-base-300 rounded-b-xl rounded-t-none -mt-4 text-center p-2 text-xs text-white">
+                <div
+                    className={`rounded-b-xl rounded-t-none -mt-4 text-center p-2 text-xs text-white ${!isExpanded && "hidden"}`}
+                    style={{ backgroundColor: darkenColor(settings.backgroundColor || "#1d232a", 30) }}
+                >
                     <a
                         href="https://modelosaurus.com"
                         target="_blank"
@@ -490,7 +545,7 @@ const ModelosaurusChatbot: React.FC<ModelosaurusChatbotProps> = ({
                     >
                         <img src={modelosaurusLogo} alt="Modelosaurus" className="size-3" />
                         <span>POWERED BY
-                            <span className="text-purple-600"> MODELOSAURUS</span>
+                            <span className="font-bold"> MODELOSAURUS</span>
                         </span>
                     </a>
                 </div>

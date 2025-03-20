@@ -6,3 +6,8 @@ tailwind.config.js
 .gitignore
 package-lock.json
 .github/
+
+# Storybook files
+.storybook/
+src/**/*.stories.*
+src/stories/
