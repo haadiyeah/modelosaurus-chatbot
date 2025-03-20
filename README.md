@@ -16,12 +16,12 @@ A customizable plug-and-play chatbot component for React applications, designed 
 
 Using npm:
 ```bash
-npm install modelosaurus-chatbots
+npm install modelosaurus-chatbot
 ```
 
 Using yarn:
 ```bash
-yarn add modelosaurus-chatbots
+yarn add modelosaurus-chatbot
 ```
 
 ## 🚀 Usage
@@ -37,7 +37,7 @@ Basic integration in a React application:
 
 ```jsx
 import React from 'react';
-import ModelosaurusChatbot from 'modelosaurus-chatbots';
+import ModelosaurusChatbot from 'modelosaurus-chatbot';
 
 function App() {
   return (
@@ -84,7 +84,7 @@ import {
   ChatbotData, 
   ChatMessage, 
   ModelosaurusChatbotProps 
-} from 'modelosaurus-chatbots';
+} from 'modelosaurus-chatbot';
 ```
 
 Available types:
@@ -98,7 +98,7 @@ To explore the component:
 
 ```bash
 # Clone the repository
-git clone https://github.com/haadiyeah/modelosaurus-chatbots.git
+git clone https://github.com/haadiyeah/modelosaurus-chatbot.git
 
 # Install dependencies
 npm install

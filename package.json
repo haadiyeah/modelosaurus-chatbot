@@ -1,5 +1,5 @@
 {
-  "name": "modelosaurus-chatbots",
+  "name": "modelosaurus-chatbot",
   "version": "1.0.1",
   "description": "A customizable plug and play chatbot component for React applications, designed to work seamlessly with the Modelosaurus API.",
   "main": "dist/index.js",
