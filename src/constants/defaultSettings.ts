@@ -1,0 +1,26 @@
+import { ChatbotData } from '../types';
+
+export const DEFAULT_SETTINGS: ChatbotData = {
+  headerColor: '#6419E6',
+  chatBubbleUserColor: '#F000B8',
+  chatBubbleBotColor: '#6419E6',
+  fontSize: 16,
+  borderRadius: 10,
+  fontFamily: 'sans-serif',
+  showBotIcon: true,
+  showUserIcon: true,
+  botIconUrl: "",
+  userIconUrl: "",
+  titleText: 'Chat with AI',
+  initialMessage: 'Hello! How can I assist you today?',
+  llm: 'llama-3.1-8b-instant',
+  temperature: 30,
+  maxTokens: 500,
+  customCSS: '',
+  enableVectorSearch: true,
+  enableStreaming: true,
+  backgroundColor: '#1d232a',
+  chatWidth: 400,
+  fullWidth: false,
+  demoMode: true,
+};

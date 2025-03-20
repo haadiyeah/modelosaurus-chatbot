@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import ModelosaurusChatbot from './ModelosaurusChatbot';
+import ModelosaurusChatbot from '../components/ModelosaurusChatbot';
 
 const meta: Meta<typeof ModelosaurusChatbot> = {
   component: ModelosaurusChatbot,
