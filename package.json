@@ -1,6 +1,6 @@
 {
   "name": "modelosaurus-chatbot",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A customizable plug and play chatbot component for React applications, designed to work seamlessly with the Modelosaurus API.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -26,8 +26,8 @@
   "author": "Haadiya Sajid",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
   },
   "dependencies": {
     "framer-motion": "^10.16.4",
