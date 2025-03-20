@@ -98,7 +98,7 @@ To explore the component:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/modelosaurus-chatbots.git
+git clone https://github.com/haadiyeah/modelosaurus-chatbots.git
 
 # Install dependencies
 npm install

@@ -10,14 +10,14 @@ export default meta;
 
 export const Default: StoryObj<typeof ModelosaurusChatbot> = {
   args: {
-    modelosaurusKey: "ms_a48f5bdeda2b7336a3f2451aa87d3776",
-    chatbotId: "67d550d58aacf8afa4eb3add",
+    modelosaurusKey: "your-modelosaurus-key-here",
+    chatbotId: "your-chatbot-id-here",
   },
 };
 
 export const DarkTheme: StoryObj<typeof ModelosaurusChatbot> = {
   args: {
-    modelosaurusKey: "ms_a48f5bdeda2b7336a3f2451aa87d3776",
-    chatbotId: "67d550d58aacf8afa4eb3add",
+    modelosaurusKey: "your-modelosaurus-key-here",
+    chatbotId: "your-chatbot-id-here",
   },
 };
