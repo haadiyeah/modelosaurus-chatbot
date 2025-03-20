@@ -5,6 +5,7 @@ import postcss from 'rollup-plugin-postcss';
 import image from '@rollup/plugin-image';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import typescript from '@rollup/plugin-typescript';
+import copy from 'rollup-plugin-copy';
 
 export default {
   input: 'src/index.ts',
@@ -51,6 +52,12 @@ export default {
       },
       extract: false
     }),
-    image()
+    image(),
+    //  plugin to copy fonts to dist
+    copy({
+      targets: [
+        { src: 'src/assets/fonts/*', dest: 'dist/fonts' }
+      ]
+    })
   ]
 };

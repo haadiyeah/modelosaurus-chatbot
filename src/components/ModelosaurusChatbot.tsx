@@ -82,7 +82,7 @@ initialMessage = 'Hello! How can I assist you today?',
 apiUrl = "https://kodiak-viable-supposedly.ngrok-free.app", //server
 
 // LLM props
-llm = 'llama-3.2-b', // Default LLM
+llm = 'llama-3.1-8b-instant', // Default LLM
 temperature = 30, // Default temperature (0.3)
 maxTokens = 500, // Default max tokens
 modelosaurusKey = '', // Required for API access
@@ -121,26 +121,29 @@ useEffect(() => {
 }, [chat]);
 
 useEffect(() => {
-    if (enableVectorSearch) {
-    fetch(`${apiUrl}/chatbot/vector-store-url`, {
-        method: 'POST',
-        headers: {
-        'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-        apiKey: modelosaurusKey,
-        chatbotId: chatbotId,
-        }),
-    })
-        .then((response) => response.json())
-        .then((data) => {
-        setVectorStoreUrl(data.vector_store_url);
+    
+        fetch(`${apiUrl}/chatbot/get-chatbot-data`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            apiKey: modelosaurusKey,
+            chatbotId: chatbotId,
+          }),
         })
-        .catch((error) => {
-        console.error('Error:', error);
-        });
-    }
-}, [enableVectorSearch]);
+          .then((response) => response.json())
+          .then((data) => {
+            console.log("got the vector store url.")
+            console.log(data.vector_store_url)
+            setVectorStoreUrl(data.vector_store_url)
+            // data.chatbotData contains all the data to be set.
+          })
+          .catch((error) => {
+            console.error('Error:', error);
+          });
+      
+}, []);
 
 // Apply custom CSS if provided
 useEffect(() => {

@@ -23,7 +23,6 @@ interface ModelosaurusChatbotProps {
     customCSS?: string;
     enableVectorSearch?: boolean;
     enableStreaming?: boolean;
-    demoMode?: boolean;
 }
 declare const ModelosaurusChatbot: React.FC<ModelosaurusChatbotProps>;
 export default ModelosaurusChatbot;
