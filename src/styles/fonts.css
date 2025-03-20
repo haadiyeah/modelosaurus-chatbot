@@ -1,11 +1,12 @@
 @font-face {
-    font-family: "Octosquare";
-    src: url("../assets/fonts/TT\ Octosquares\ Trial\ Compressed\ Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  .font-octosquare {
-    font-family: "Octosquare", sans-serif;
-  }
+  font-family: "Octosquare";
+  /*path to match where the fonts will be in the published package */
+  src: url("./fonts/TT\ Octosquares\ Trial\ Compressed\ Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-octosquare {
+  font-family: "Octosquare", Arial, sans-serif !important;
+}

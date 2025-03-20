@@ -15,16 +15,22 @@ const Footer: React.FC<FooterProps> = ({ settings, isExpanded }) => {
       style={{ backgroundColor: darkenColor(settings.backgroundColor || "#1d232a", 30) }}
     >
       <a
-        href="https://modelosaurus.com"
-        target="_blank"
-        rel="noreferrer"
-        className="opacity-40 hover:opacity-90 transition-opacity duration-300 font-octosquare flex items-center justify-center gap-1"
-      >
-        <img src={modelosaurusLogo} alt="Modelosaurus" className="size-3" />
-        <span>POWERED BY
-          <span className="font-bold"> MODELOSAURUS</span>
-        </span>
-      </a>
+  href="https://modelosaurus.com"
+  target="_blank"
+  rel="noreferrer"
+  className="opacity-40 hover:opacity-90 transition-opacity duration-300 flex items-center justify-center gap-1"
+  style={{ 
+    fontFamily: "'Octosquare', 'Arial', sans-serif !important",
+    textTransform: "uppercase",
+    letterSpacing: "0.05em",
+    fontWeight: "bold"
+  }}
+>
+  <img src={modelosaurusLogo} alt="Modelosaurus" className="size-3" />
+  <span>POWERED BY
+    <span style={{ fontWeight: 800 }}> MODELOSAURUS</span>
+  </span>
+</a>
     </div>
   );
 };

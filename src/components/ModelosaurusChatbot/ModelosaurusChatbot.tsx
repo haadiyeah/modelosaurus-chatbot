@@ -27,7 +27,8 @@ const ModelosaurusChatbot: React.FC<ModelosaurusChatbotProps> = ({
     handleSendMessage,
     handleKeyPress,
     toggleChat,
-    calculateWidth
+    calculateWidth,
+    initialLoading,
   } = useChatbot(modelosaurusKey, chatbotId);
 
   const fontStyle = {
@@ -36,6 +37,8 @@ const ModelosaurusChatbot: React.FC<ModelosaurusChatbotProps> = ({
   };
 
   return (
+    initialLoading ? <></>
+     :
     <>
       {/* Gradient Overlay */}
       {!settings.demoMode && (

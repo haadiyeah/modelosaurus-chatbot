@@ -52,11 +52,19 @@ export default {
       },
       extract: false
     }),
-    image(),
+    image({
+      include: ['**/*.png', '**/*.jpg', '**/*.svg'],
+      // Adjust size limit if needed
+      limit: 8192
+    }),
     //  plugin to copy fonts to dist
     copy({
       targets: [
-        { src: 'src/assets/fonts/*', dest: 'dist/fonts' }
+        { 
+          src: 'src/assets/fonts/*.ttf', 
+          dest: 'dist/fonts',
+          flatten: true 
+        }
       ]
     })
   ]

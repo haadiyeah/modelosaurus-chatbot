@@ -11,7 +11,8 @@ export const useChatbot = (modelosaurusKey: string, chatbotId: string) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const chatEndRef = useRef<HTMLDivElement>(null);
   const [vectorStoreUrl, setVectorStoreUrl] = useState<string | null>(null);
-
+  const [initialLoading, setInitialLoading] = useState<boolean>(true);
+ 
   // Scroll to bottom of chat
   const scrollToBottom = useCallback((): void => {
     chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -42,6 +43,7 @@ export const useChatbot = (modelosaurusKey: string, chatbotId: string) => {
   // Fetch chatbot data
   useEffect(() => {
     const getChatbotData = async () => {
+        setInitialLoading(true);
       const data = await fetchChatbotData(modelosaurusKey, chatbotId);
       
       if (data.vectorStoreUrl) {
@@ -54,6 +56,7 @@ export const useChatbot = (modelosaurusKey: string, chatbotId: string) => {
           ...data.chatbotData
         }));
       }
+        setInitialLoading(false);
     };
     
     getChatbotData();
@@ -222,6 +225,7 @@ export const useChatbot = (modelosaurusKey: string, chatbotId: string) => {
     handleSendMessage,
     handleKeyPress,
     toggleChat,
-    calculateWidth
+    calculateWidth,
+    initialLoading,
   };
 };

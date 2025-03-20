@@ -33,8 +33,10 @@ const MessageItem: React.FC<MessageItemProps> = ({ message, settings }) => {
   
   // Select appropriate avatar
   const avatarSrc = isBotMessage
-    ? (settings.botIconUrl?.trim() !== "" ? settings.botIconUrl : botIcon)
-    : (settings.userIconUrl?.trim() !== "" ? settings.userIconUrl : userIcon);
+    // ? (settings.botIconUrl?.trim() !== "" ? settings.botIconUrl : botIcon)
+    // : (settings.userIconUrl?.trim() !== "" ? settings.userIconUrl : userIcon);
+    ?  botIcon
+    : userIcon;
 
   return (
     <div className={`chat mb-3 ${isBotMessage ? 'chat-start' : 'chat-end'}`}>

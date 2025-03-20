@@ -14,4 +14,5 @@ export declare const useChatbot: (modelosaurusKey: string, chatbotId: string) =>
     handleKeyPress: (e: React.KeyboardEvent<HTMLInputElement>) => void;
     toggleChat: () => void;
     calculateWidth: () => string;
+    initialLoading: boolean;
 };
